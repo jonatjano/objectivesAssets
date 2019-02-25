@@ -1,0 +1,57 @@
+{
+    "game": "jeu",
+    "name": "name",
+    "description": "c'est le premier test",
+    "quests": {
+        "quête 1": [
+            {
+                "gives": ["a"],
+                "description": "get a"
+            },
+            {
+                "consumes": ["a"],
+                "gives": ["b"],
+                "description": "transform a into b"
+            },
+            {
+                "needs": ["b"],
+                "gives": ["c"],
+                "description": "you still have b"
+            }
+        ],
+        "quête 2": [
+            {
+                "needs": ["a"],
+                "description": "you have a"
+            },
+            {
+                "needs": ["a"],
+                "gives": ["d"],
+                "description": "use a to get d"
+            },
+            {
+                "consumes": ["d"],
+                "description": "consumes d"
+            },
+            {
+                "preventedBy": ["d"],
+                "description": "d is locking this step"
+            }
+        ],
+        "quête 3": [
+            {
+                "gives": ["x"],
+                "description": "get x"
+            },
+            {
+                "needs": ["x"],
+                "gives": ["y"],
+                "description": "use x to get y"
+            },
+            {
+                "needs": ["x", "y"],
+                "description": "you have x and y"
+            }
+        ]
+    }
+}
