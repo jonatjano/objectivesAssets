@@ -1,0 +1,14 @@
+{
+    "game": "jeu2",
+    "name": "name2",
+    "description": "c'est le second test",
+    "quests": {
+        "title": "quête 1",
+        "objectives": [
+            {
+                "id": 0,
+                "description": "get a"
+            }
+        ]
+    }
+}
